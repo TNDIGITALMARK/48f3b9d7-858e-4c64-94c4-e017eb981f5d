@@ -1,59 +1,78 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ============================================
+   K.V.H RENOVATIONS DESIGN SYSTEM
+   Extracted from ai-generated-preview.png
+   Pixel-perfect color, typography, and spacing
+   ============================================ */
 
 :root {
-  /* Pure white background with crisp black text */
-  --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  /* K.V.H Brand Colors (HSL format) */
+  --primary-navy: 217 30% 28%;        /* #2C3E5E - Header, footer, dark sections */
+  --orange-accent: 14 100% 60%;       /* #FF6B35 - CTA buttons, icons, highlights */
+  --light-bg: 210 20% 93%;            /* #E8EDF2 - Page background */
+  --white: 0 0% 100%;                 /* #FFFFFF - Cards, text on dark */
+  --dark-text: 0 0% 20%;              /* #333333 - Body text */
+  --light-text: 0 0% 40%;             /* #666666 - Secondary text */
 
-  /* Clean white cards with black text */
-  --card: 0 0% 100%;
-  --card-foreground: 0 0% 0%;
+  /* System color mappings */
+  --background: 210 20% 93%;          /* Light gray background */
+  --foreground: 0 0% 20%;             /* Dark text */
 
-  /* Popovers with white background */
+  --card: 0 0% 100%;                  /* White cards */
+  --card-foreground: 0 0% 20%;
+
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 0%;
+  --popover-foreground: 0 0% 20%;
 
-  /* Primary: Black with white text */
-  --primary: 0 0% 0%;
+  /* Primary: Navy blue with white text */
+  --primary: 217 30% 28%;
   --primary-foreground: 0 0% 100%;
 
-  /* Secondary: Light gray background with black text */
-  --secondary: 0 0% 97%;
-  --secondary-foreground: 0 0% 0%;
+  /* Secondary: Light background */
+  --secondary: 210 20% 93%;
+  --secondary-foreground: 0 0% 20%;
 
-  /* Muted: Subtle gray with darker text */
-  --muted: 0 0% 96%;
+  /* Muted: Subtle gray */
+  --muted: 210 15% 90%;
   --muted-foreground: 0 0% 40%;
 
-  /* Accent: Light gray */
-  --accent: 0 0% 96%;
-  --accent-foreground: 0 0% 0%;
+  /* Accent: Orange */
+  --accent: 14 100% 60%;
+  --accent-foreground: 0 0% 100%;
 
-  /* Destructive: Clean red */
+  /* Destructive: Red */
   --destructive: 0 70% 50%;
   --destructive-foreground: 0 0% 100%;
 
   /* Borders: Subtle gray */
-  --border: 0 0% 90%;
-  --input: 0 0% 90%;
-  --ring: 0 0% 0%;
+  --border: 210 15% 85%;
+  --input: 210 15% 90%;
+  --ring: 14 100% 60%;
 
-  /* Minimal rounded corners */
-  --radius: 0.375rem;
+  /* Rounded corners for K.V.H design */
+  --radius: 0.75rem;                  /* 12px for cards */
+  --radius-button: 0.5rem;            /* 8px for buttons */
 
-  /* Sidebar: Clean white with black text */
-  --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 0 0% 0%;
-  --sidebar-primary: 0 0% 0%;
+  /* Sidebar (using navy theme) */
+  --sidebar-background: 217 30% 28%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 14 100% 60%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 0% 96%;
-  --sidebar-accent-foreground: 0 0% 0%;
-  --sidebar-border: 0 0% 90%;
-  --sidebar-ring: 0 0% 0%;
+  --sidebar-accent: 217 30% 35%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 217 30% 35%;
+  --sidebar-ring: 14 100% 60%;
+
+  /* Typography system */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing system */
+  --section-padding: 5rem;            /* 80px vertical section padding */
+  --card-gap: 1.5rem;                 /* 24px gap between cards */
+  --content-margin: 2.5rem;           /* 40px between sections */
 }
 
 .dark {
@@ -168,28 +187,133 @@ All colors MUST be HSL.
   border-color: hsl(var(--border));
 }
 
+/* ============================================
+   GLOBAL ELEMENT STYLING
+   Typography, base elements, component defaults
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
   font-feature-settings: "rlig" 1, "calt" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-/* Minimal, clean typography */
+/* Typography - Headings use Montserrat (bold) */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-weight: 700;
   letter-spacing: -0.025em;
-  color: hsl(var(--foreground));
+  color: hsl(var(--dark-text));
+  margin-top: 0;
+  line-height: 1.2;
 }
 
-/* Clean button styles */
+h1 {
+  font-size: 3rem;          /* 48px */
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.5rem;        /* 40px */
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;          /* 32px */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;        /* 24px */
+  margin-bottom: 0.875rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;       /* 20px */
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem;          /* 16px */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Body text - Open Sans */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: hsl(var(--dark-text));
+}
+
+a {
+  color: hsl(var(--orange-accent));
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: hsl(14 100% 50%);
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Button defaults - Orange accent */
 button {
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-/* Subtle shadows for depth */
+/* Input defaults */
+input, textarea, select {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius-button);
+  padding: 0.75rem 1rem;
+  background-color: white;
+  color: hsl(var(--dark-text));
+  transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: hsl(var(--orange-accent));
+  box-shadow: 0 0 0 3px hsla(var(--orange-accent) / 0.1);
+}
+
+/* K.V.H specific shadows (matching design reference) */
+.shadow-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 .shadow-sm {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
@@ -200,4 +324,45 @@ button {
 
 .shadow-md {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Container utilities */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Section spacing */
+.section-padding {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;          /* 32px on mobile */
+  }
+
+  h2 {
+    font-size: 1.75rem;       /* 28px on mobile */
+  }
+
+  h3 {
+    font-size: 1.5rem;        /* 24px on mobile */
+  }
+
+  .section-padding {
+    padding-top: 3rem;        /* 48px on mobile */
+    padding-bottom: 3rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

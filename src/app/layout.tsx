@@ -19,8 +19,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "K.V.H Renovations | Quality Home Renovations in the GTA",
+  description: "K.V.H Renovations - Your trusted GTA contractor for flooring, drywall, tiles, roofing, and more. Quality renovations at honest prices. Call (647) 914-6945 for a free quote.",
+  keywords: "renovations, contractor, GTA, flooring, drywall, tiles, roofing, home improvement, Toronto, Mississauga",
+  openGraph: {
+    title: "K.V.H Renovations | Quality Home Renovations in the GTA",
+    description: "Your trusted GTA contractor for quality renovations at honest prices.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -41,7 +47,8 @@ export default function RootLayout({
             <ThemeProvider
               attribute="class"
               defaultTheme="light"
-              enableSystem
+              enableSystem={false}
+              forcedTheme="light"
               disableTransitionOnChange
             >
               <TooltipProvider>
