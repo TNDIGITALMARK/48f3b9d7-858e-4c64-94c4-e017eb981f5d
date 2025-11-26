@@ -74,7 +74,7 @@ export function WhyChooseUs() {
                 work, fair pricing, and excellent communication throughout the project."
               </p>
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-[hsl(var(--orange-accent))] rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-[hsl(var(--orange-accent))] rounded-full flex items-center justify-center btn-text-white font-bold">
                   SM
                 </div>
                 <div>
@@ -90,7 +90,7 @@ export function WhyChooseUs() {
                 recommend for anyone looking for quality work at honest prices."
               </p>
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-[hsl(var(--orange-accent))] rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-[hsl(var(--orange-accent))] rounded-full flex items-center justify-center btn-text-white font-bold">
                   MD
                 </div>
                 <div>

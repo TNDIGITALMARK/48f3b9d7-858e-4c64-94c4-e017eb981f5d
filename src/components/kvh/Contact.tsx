@@ -102,14 +102,14 @@ export function Contact() {
             </div>
 
             {/* CTA Box */}
-            <div className="bg-[hsl(var(--primary-navy))] p-8 rounded-xl text-white shadow-lg">
-              <h4 className="text-2xl font-bold mb-3">Ready to Get Started?</h4>
-              <p className="mb-6 text-white/90">
+            <div className="bg-[hsl(var(--primary-navy))] p-8 rounded-xl shadow-lg">
+              <h4 className="title-light text-2xl font-bold mb-3">Ready to Get Started?</h4>
+              <p className="text-light mb-6">
                 Call or text us now for a free, no-obligation quote on your renovation project.
               </p>
               <a
                 href="tel:6479146945"
-                className="inline-flex items-center space-x-2 bg-[hsl(var(--orange-accent))] text-white px-6 py-3 rounded-lg font-bold hover:brightness-110 transition-all"
+                className="inline-flex items-center space-x-2 bg-[hsl(var(--orange-accent))] btn-text-white px-6 py-3 rounded-lg font-bold hover:brightness-110 transition-all"
               >
                 <Phone size={20} />
                 <span>Call Now: (647) 914-6945</span>
@@ -219,7 +219,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[hsl(var(--orange-accent))] text-white px-6 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                className="w-full bg-[hsl(var(--orange-accent))] btn-text-white px-6 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
               >
                 {isSubmitting ? (
                   <span>Sending...</span>

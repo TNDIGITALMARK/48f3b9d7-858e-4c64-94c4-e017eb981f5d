@@ -366,3 +366,38 @@ input:focus, textarea:focus, select:focus {
     padding-right: 1rem;
   }
 }
+
+/* ============================================
+   TEXT VISIBILITY UTILITY CLASSES
+   For handling text contrast on various backgrounds
+   ============================================ */
+
+/* Title classes for light backgrounds (default) */
+.title-dark {
+  color: hsl(var(--primary-navy)) !important;
+}
+
+/* Title classes for dark backgrounds */
+.title-light {
+  color: hsl(var(--white)) !important;
+}
+
+/* Subtitle/paragraph classes for light backgrounds */
+.text-dark {
+  color: hsl(var(--dark-text)) !important;
+}
+
+/* Subtitle/paragraph classes for dark backgrounds */
+.text-light {
+  color: hsl(var(--white)) !important;
+  opacity: 0.95;
+}
+
+/* Button text visibility fixes */
+.btn-text-white {
+  color: hsl(var(--white)) !important;
+}
+
+.btn-text-dark {
+  color: hsl(var(--primary-navy)) !important;
+}

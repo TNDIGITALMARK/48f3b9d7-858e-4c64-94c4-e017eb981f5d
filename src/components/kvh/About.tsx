@@ -42,7 +42,7 @@ export function About() {
               <div className="pt-4">
                 <a
                   href="#contact"
-                  className="inline-block bg-[hsl(var(--orange-accent))] text-white px-6 py-3 rounded-lg font-semibold hover:brightness-110 transition-all"
+                  className="inline-block bg-[hsl(var(--orange-accent))] btn-text-white px-6 py-3 rounded-lg font-semibold hover:brightness-110 transition-all"
                 >
                   Learn More About Our Work
                 </a>

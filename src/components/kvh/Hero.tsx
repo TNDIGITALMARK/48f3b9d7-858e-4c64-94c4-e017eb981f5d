@@ -17,11 +17,11 @@ export function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
+      <div className="relative z-10 container mx-auto px-6 text-center">
+        <h1 className="title-light text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
           Reliable, Affordable<br />Renovations
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white/95 drop-shadow">
+        <p className="text-light text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow">
           Your Trusted GTA Contractor for Quality Home Improvements
         </p>
 
@@ -29,14 +29,14 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="tel:6479146945"
-            className="flex items-center space-x-2 bg-[hsl(var(--orange-accent))] text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg"
+            className="flex items-center space-x-2 bg-[hsl(var(--orange-accent))] btn-text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg"
           >
             <Phone size={24} />
             <span>Call or Text for Free Quote</span>
           </a>
           <a
             href="#contact"
-            className="bg-white text-[hsl(var(--primary-navy))] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all shadow-lg"
+            className="bg-white btn-text-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all shadow-lg"
           >
             Get Started Today
           </a>
@@ -46,7 +46,7 @@ export function Hero() {
         <div className="mt-6">
           <a
             href="tel:6479146945"
-            className="text-2xl font-bold text-[hsl(var(--orange-accent))] drop-shadow hover:text-white transition-colors"
+            className="text-2xl font-bold text-[hsl(var(--orange-accent))] drop-shadow hover:brightness-110 transition-colors"
           >
             (647) 914-6945
           </a>

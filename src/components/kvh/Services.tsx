@@ -76,7 +76,7 @@ export function Services() {
         <div className="text-center mt-12">
           <a
             href="#contact"
-            className="inline-block bg-[hsl(var(--orange-accent))] text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg"
+            className="inline-block bg-[hsl(var(--orange-accent))] btn-text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg"
           >
             Request a Free Quote
           </a>

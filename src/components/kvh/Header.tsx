@@ -37,7 +37,7 @@ export function Header() {
             {/* Phone CTA */}
             <a
               href="tel:6479146945"
-              className="flex items-center space-x-2 bg-[hsl(var(--orange-accent))] text-white px-5 py-2.5 rounded-lg font-semibold hover:brightness-110 transition-all"
+              className="flex items-center space-x-2 bg-[hsl(var(--orange-accent))] btn-text-white px-5 py-2.5 rounded-lg font-semibold hover:brightness-110 transition-all"
             >
               <Phone size={18} />
               <span>(647) 914-6945</span>
@@ -87,7 +87,7 @@ export function Header() {
             </Link>
             <a
               href="tel:6479146945"
-              className="flex items-center justify-center space-x-2 bg-[hsl(var(--orange-accent))] text-white px-5 py-3 rounded-lg font-semibold hover:brightness-110 transition-all"
+              className="flex items-center justify-center space-x-2 bg-[hsl(var(--orange-accent))] btn-text-white px-5 py-3 rounded-lg font-semibold hover:brightness-110 transition-all"
             >
               <Phone size={18} />
               <span>(647) 914-6945</span>
