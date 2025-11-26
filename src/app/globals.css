@@ -8,62 +8,69 @@
    ============================================ */
 
 :root {
-  /* K.V.H Brand Colors (HSL format) */
-  --primary-navy: 217 30% 28%;        /* #2C3E5E - Header, footer, dark sections */
-  --orange-accent: 14 100% 60%;       /* #FF6B35 - CTA buttons, icons, highlights */
-  --light-bg: 210 20% 93%;            /* #E8EDF2 - Page background */
-  --white: 0 0% 100%;                 /* #FFFFFF - Cards, text on dark */
-  --dark-text: 0 0% 20%;              /* #333333 - Body text */
-  --light-text: 0 0% 40%;             /* #666666 - Secondary text */
+  /* K.V.H Brand Colors - DARK THEME WITH GREEN ACCENTS */
+  --primary-dark: 220 20% 12%;        /* #1A1F28 - Deep dark background */
+  --secondary-dark: 220 18% 16%;      /* #21262F - Slightly lighter dark */
+  --green-accent: 142 76% 45%;        /* #1BAE59 - Vibrant green accent */
+  --green-accent-hover: 142 76% 55%;  /* #22D96D - Brighter green on hover */
+  --white: 0 0% 100%;                 /* #FFFFFF - Pure white for text */
+  --light-text: 0 0% 90%;             /* #E6E6E6 - Light gray text */
+  --muted-text: 0 0% 65%;             /* #A6A6A6 - Muted text */
 
-  /* System color mappings */
-  --background: 210 20% 93%;          /* Light gray background */
-  --foreground: 0 0% 20%;             /* Dark text */
+  /* Legacy variable mappings for backward compatibility */
+  --primary-navy: 220 20% 12%;        /* Maps to dark background */
+  --orange-accent: 142 76% 45%;       /* Maps to green accent */
+  --light-bg: 220 20% 12%;            /* Dark background */
+  --dark-text: 0 0% 90%;              /* Light text on dark */
 
-  --card: 0 0% 100%;                  /* White cards */
-  --card-foreground: 0 0% 20%;
+  /* System color mappings - DARK THEME */
+  --background: 220 20% 12%;          /* Deep dark background */
+  --foreground: 0 0% 90%;             /* Light text */
 
-  --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 20%;
+  --card: 220 18% 16%;                /* Slightly lighter dark cards */
+  --card-foreground: 0 0% 90%;        /* Light text on cards */
 
-  /* Primary: Navy blue with white text */
-  --primary: 217 30% 28%;
+  --popover: 220 18% 16%;
+  --popover-foreground: 0 0% 90%;
+
+  /* Primary: Green accent */
+  --primary: 142 76% 45%;
   --primary-foreground: 0 0% 100%;
 
-  /* Secondary: Light background */
-  --secondary: 210 20% 93%;
-  --secondary-foreground: 0 0% 20%;
+  /* Secondary: Dark card color */
+  --secondary: 220 18% 16%;
+  --secondary-foreground: 0 0% 90%;
 
-  /* Muted: Subtle gray */
-  --muted: 210 15% 90%;
-  --muted-foreground: 0 0% 40%;
+  /* Muted: Darker gray */
+  --muted: 220 15% 20%;
+  --muted-foreground: 0 0% 65%;
 
-  /* Accent: Orange */
-  --accent: 14 100% 60%;
+  /* Accent: Green */
+  --accent: 142 76% 45%;
   --accent-foreground: 0 0% 100%;
 
   /* Destructive: Red */
   --destructive: 0 70% 50%;
   --destructive-foreground: 0 0% 100%;
 
-  /* Borders: Subtle gray */
-  --border: 210 15% 85%;
-  --input: 210 15% 90%;
-  --ring: 14 100% 60%;
+  /* Borders: Subtle dark borders */
+  --border: 220 15% 25%;
+  --input: 220 15% 20%;
+  --ring: 142 76% 45%;
 
-  /* Rounded corners for K.V.H design */
+  /* Rounded corners */
   --radius: 0.75rem;                  /* 12px for cards */
   --radius-button: 0.5rem;            /* 8px for buttons */
 
-  /* Sidebar (using navy theme) */
-  --sidebar-background: 217 30% 28%;
-  --sidebar-foreground: 0 0% 100%;
-  --sidebar-primary: 14 100% 60%;
+  /* Sidebar (dark theme) */
+  --sidebar-background: 220 20% 12%;
+  --sidebar-foreground: 0 0% 90%;
+  --sidebar-primary: 142 76% 45%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 217 30% 35%;
-  --sidebar-accent-foreground: 0 0% 100%;
-  --sidebar-border: 217 30% 35%;
-  --sidebar-ring: 14 100% 60%;
+  --sidebar-accent: 220 18% 16%;
+  --sidebar-accent-foreground: 0 0% 90%;
+  --sidebar-border: 220 15% 25%;
+  --sidebar-ring: 142 76% 45%;
 
   /* Typography system */
   --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -76,41 +83,44 @@
 }
 
 .dark {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
+  /* Dark class inherits from :root - all colors already set for dark theme */
+  /* These match the :root values to ensure consistency */
+  --background: 220 20% 12%;
+  --foreground: 0 0% 90%;
 
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
+  --card: 220 18% 16%;
+  --card-foreground: 0 0% 90%;
 
-  --popover: 222.2 84% 4.9%;
-  --popover-foreground: 210 40% 98%;
+  --popover: 220 18% 16%;
+  --popover-foreground: 0 0% 90%;
 
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
+  --primary: 142 76% 45%;
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 220 18% 16%;
+  --secondary-foreground: 0 0% 90%;
 
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
+  --muted: 220 15% 20%;
+  --muted-foreground: 0 0% 65%;
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 142 76% 45%;
+  --accent-foreground: 0 0% 100%;
 
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
 
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
-  --sidebar-background: 240 5.9% 10%;
-  --sidebar-foreground: 240 4.8% 95.9%;
-  --sidebar-primary: 224.3 76.3% 48%;
+  --border: 220 15% 25%;
+  --input: 220 15% 20%;
+  --ring: 142 76% 45%;
+
+  --sidebar-background: 220 20% 12%;
+  --sidebar-foreground: 0 0% 90%;
+  --sidebar-primary: 142 76% 45%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 240 3.7% 15.9%;
-  --sidebar-accent-foreground: 240 4.8% 95.9%;
-  --sidebar-border: 240 3.7% 15.9%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --sidebar-accent: 220 18% 16%;
+  --sidebar-accent-foreground: 0 0% 90%;
+  --sidebar-border: 220 15% 25%;
+  --sidebar-ring: 142 76% 45%;
 }
 
 @theme {
@@ -220,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: -0.025em;
-  color: hsl(var(--dark-text));
+  color: hsl(var(--foreground));
   margin-top: 0;
   line-height: 1.2;
 }
@@ -265,17 +275,17 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: hsl(var(--dark-text));
+  color: hsl(var(--foreground));
 }
 
 a {
-  color: hsl(var(--orange-accent));
+  color: hsl(var(--green-accent));
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: hsl(14 100% 50%);
+  color: hsl(var(--green-accent-hover));
   text-decoration: underline;
 }
 
@@ -298,15 +308,15 @@ input, textarea, select {
   border: 1px solid hsl(var(--border));
   border-radius: var(--radius-button);
   padding: 0.75rem 1rem;
-  background-color: white;
-  color: hsl(var(--dark-text));
+  background-color: hsl(var(--input));
+  color: hsl(var(--foreground));
   transition: border-color 0.2s ease;
 }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border-color: hsl(var(--orange-accent));
-  box-shadow: 0 0 0 3px hsla(var(--orange-accent) / 0.1);
+  border-color: hsl(var(--green-accent));
+  box-shadow: 0 0 0 3px hsla(var(--green-accent) / 0.1);
 }
 
 /* K.V.H specific shadows (matching design reference) */
@@ -372,25 +382,30 @@ input:focus, textarea:focus, select:focus {
    For handling text contrast on various backgrounds
    ============================================ */
 
-/* Title classes for light backgrounds (default) */
+/* Title classes for dark backgrounds (default for dark theme) */
 .title-dark {
-  color: hsl(var(--primary-navy)) !important;
+  color: hsl(var(--foreground)) !important;
 }
 
-/* Title classes for dark backgrounds */
+/* Title classes for lighter/card backgrounds */
 .title-light {
   color: hsl(var(--white)) !important;
 }
 
-/* Subtitle/paragraph classes for light backgrounds */
+/* Subtitle/paragraph classes for dark backgrounds (default) */
 .text-dark {
-  color: hsl(var(--dark-text)) !important;
+  color: hsl(var(--foreground)) !important;
 }
 
-/* Subtitle/paragraph classes for dark backgrounds */
+/* Subtitle/paragraph classes with reduced opacity */
 .text-light {
-  color: hsl(var(--white)) !important;
+  color: hsl(var(--muted-text)) !important;
   opacity: 0.95;
+}
+
+/* Muted text for secondary information */
+.text-muted {
+  color: hsl(var(--muted-text)) !important;
 }
 
 /* Button text visibility fixes */
@@ -399,5 +414,10 @@ input:focus, textarea:focus, select:focus {
 }
 
 .btn-text-dark {
-  color: hsl(var(--primary-navy)) !important;
+  color: hsl(var(--background)) !important;
+}
+
+/* Green accent text */
+.text-accent {
+  color: hsl(var(--green-accent)) !important;
 }

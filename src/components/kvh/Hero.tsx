@@ -29,7 +29,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="tel:6479146945"
-            className="flex items-center space-x-2 bg-[hsl(var(--orange-accent))] btn-text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg"
+            className="flex items-center space-x-2 bg-[hsl(var(--green-accent))] btn-text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[hsl(var(--green-accent-hover))] transition-all shadow-lg"
           >
             <Phone size={24} />
             <span>Call or Text for Free Quote</span>
@@ -46,7 +46,7 @@ export function Hero() {
         <div className="mt-6">
           <a
             href="tel:6479146945"
-            className="text-2xl font-bold text-[hsl(var(--orange-accent))] drop-shadow hover:brightness-110 transition-colors"
+            className="text-2xl font-bold text-[hsl(var(--green-accent))] drop-shadow hover:text-[hsl(var(--green-accent-hover))] transition-colors"
           >
             (647) 914-6945
           </a>

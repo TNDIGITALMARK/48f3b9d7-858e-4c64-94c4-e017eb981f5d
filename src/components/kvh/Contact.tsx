@@ -38,21 +38,21 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-[hsl(var(--light-bg))]">
+    <section id="contact" className="section-padding bg-[hsl(var(--background))]">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-4 text-[hsl(var(--primary-navy))]">
+        <h2 className="text-4xl font-bold text-center mb-4 text-[hsl(var(--foreground))]">
           CONTACT US
         </h2>
-        <div className="w-24 h-1 bg-[hsl(var(--orange-accent))] mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-[hsl(var(--green-accent))] mx-auto mb-12"></div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-[hsl(var(--primary-navy))]">
+              <h3 className="text-2xl font-bold mb-6 text-[hsl(var(--foreground))]">
                 Get in Touch
               </h3>
-              <p className="text-lg text-[hsl(var(--dark-text))] mb-8">
+              <p className="text-lg text-[hsl(var(--muted-text))] mb-8">
                 Ready to start your renovation project? Contact us today for a free quote.
                 We're here to answer your questions and discuss your home improvement needs.
               </p>
@@ -62,39 +62,39 @@ export function Contact() {
             <div className="space-y-4">
               <a
                 href="tel:6479146945"
-                className="flex items-center space-x-4 bg-white p-6 rounded-xl shadow-card hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[hsl(var(--orange-accent))]"
+                className="flex items-center space-x-4 bg-[hsl(var(--card))] p-6 rounded-xl shadow-card hover:shadow-lg transition-shadow border-2 border-[hsl(var(--border))] hover:border-[hsl(var(--green-accent))]"
               >
-                <div className="w-12 h-12 bg-[hsl(var(--orange-accent))]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone size={24} className="text-[hsl(var(--orange-accent))]" />
+                <div className="w-12 h-12 bg-[hsl(var(--green-accent))]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone size={24} className="text-[hsl(var(--green-accent))]" />
                 </div>
                 <div>
-                  <p className="text-sm text-[hsl(var(--light-text))] uppercase tracking-wide">Call or Text</p>
-                  <p className="text-xl font-bold text-[hsl(var(--primary-navy))]">(647) 914-6945</p>
+                  <p className="text-sm text-[hsl(var(--muted-text))] uppercase tracking-wide">Call or Text</p>
+                  <p className="text-xl font-bold text-[hsl(var(--foreground))]">(647) 914-6945</p>
                 </div>
               </a>
 
               <a
                 href="mailto:Kvh.renovations@gmail.com"
-                className="flex items-center space-x-4 bg-white p-6 rounded-xl shadow-card hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[hsl(var(--orange-accent))]"
+                className="flex items-center space-x-4 bg-[hsl(var(--card))] p-6 rounded-xl shadow-card hover:shadow-lg transition-shadow border-2 border-[hsl(var(--border))] hover:border-[hsl(var(--green-accent))]"
               >
-                <div className="w-12 h-12 bg-[hsl(var(--orange-accent))]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail size={24} className="text-[hsl(var(--orange-accent))]" />
+                <div className="w-12 h-12 bg-[hsl(var(--green-accent))]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail size={24} className="text-[hsl(var(--green-accent))]" />
                 </div>
                 <div>
-                  <p className="text-sm text-[hsl(var(--light-text))] uppercase tracking-wide">Email Us</p>
-                  <p className="text-lg font-semibold text-[hsl(var(--primary-navy))] break-all">
+                  <p className="text-sm text-[hsl(var(--muted-text))] uppercase tracking-wide">Email Us</p>
+                  <p className="text-lg font-semibold text-[hsl(var(--foreground))] break-all">
                     Kvh.renovations@gmail.com
                   </p>
                 </div>
               </a>
 
-              <div className="flex items-center space-x-4 bg-white p-6 rounded-xl shadow-card">
-                <div className="w-12 h-12 bg-[hsl(var(--orange-accent))]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin size={24} className="text-[hsl(var(--orange-accent))]" />
+              <div className="flex items-center space-x-4 bg-[hsl(var(--card))] p-6 rounded-xl shadow-card border border-[hsl(var(--border))]">
+                <div className="w-12 h-12 bg-[hsl(var(--green-accent))]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin size={24} className="text-[hsl(var(--green-accent))]" />
                 </div>
                 <div>
-                  <p className="text-sm text-[hsl(var(--light-text))] uppercase tracking-wide">Service Area</p>
-                  <p className="text-lg font-semibold text-[hsl(var(--primary-navy))]">
+                  <p className="text-sm text-[hsl(var(--muted-text))] uppercase tracking-wide">Service Area</p>
+                  <p className="text-lg font-semibold text-[hsl(var(--foreground))]">
                     Greater Toronto Area
                   </p>
                 </div>
@@ -102,14 +102,14 @@ export function Contact() {
             </div>
 
             {/* CTA Box */}
-            <div className="bg-[hsl(var(--primary-navy))] p-8 rounded-xl shadow-lg">
-              <h4 className="title-light text-2xl font-bold mb-3">Ready to Get Started?</h4>
-              <p className="text-light mb-6">
+            <div className="bg-[hsl(var(--card))] p-8 rounded-xl shadow-lg border-2 border-[hsl(var(--green-accent))]">
+              <h4 className="title-light text-2xl font-bold mb-3 text-[hsl(var(--foreground))]">Ready to Get Started?</h4>
+              <p className="text-[hsl(var(--muted-text))] mb-6">
                 Call or text us now for a free, no-obligation quote on your renovation project.
               </p>
               <a
                 href="tel:6479146945"
-                className="inline-flex items-center space-x-2 bg-[hsl(var(--orange-accent))] btn-text-white px-6 py-3 rounded-lg font-bold hover:brightness-110 transition-all"
+                className="inline-flex items-center space-x-2 bg-[hsl(var(--green-accent))] btn-text-white px-6 py-3 rounded-lg font-bold hover:bg-[hsl(var(--green-accent-hover))] transition-all"
               >
                 <Phone size={20} />
                 <span>Call Now: (647) 914-6945</span>
@@ -118,14 +118,14 @@ export function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl shadow-card">
-            <h3 className="text-2xl font-bold mb-6 text-[hsl(var(--primary-navy))]">
+          <div className="bg-[hsl(var(--card))] p-8 rounded-xl shadow-card border border-[hsl(var(--border))]">
+            <h3 className="text-2xl font-bold mb-6 text-[hsl(var(--foreground))]">
               Send Us a Message
             </h3>
 
             {submitStatus === 'success' && (
-              <div className="mb-6 p-4 bg-green-50 border-2 border-green-200 rounded-lg">
-                <p className="text-green-800 font-semibold">
+              <div className="mb-6 p-4 bg-[hsl(var(--green-accent))]/10 border-2 border-[hsl(var(--green-accent))] rounded-lg">
+                <p className="text-[hsl(var(--green-accent))] font-semibold">
                   Thank you! We'll get back to you shortly.
                 </p>
               </div>
@@ -133,7 +133,7 @@ export function Contact() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-[hsl(var(--primary-navy))] mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-[hsl(var(--foreground))] mb-2">
                   Name *
                 </label>
                 <input
@@ -148,7 +148,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-[hsl(var(--primary-navy))] mb-2">
+                <label htmlFor="phone" className="block text-sm font-semibold text-[hsl(var(--foreground))] mb-2">
                   Phone *
                 </label>
                 <input
@@ -163,7 +163,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-[hsl(var(--primary-navy))] mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-[hsl(var(--foreground))] mb-2">
                   Email *
                 </label>
                 <input
@@ -178,7 +178,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="projectType" className="block text-sm font-semibold text-[hsl(var(--primary-navy))] mb-2">
+                <label htmlFor="projectType" className="block text-sm font-semibold text-[hsl(var(--foreground))] mb-2">
                   Project Type *
                 </label>
                 <select
@@ -201,7 +201,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-[hsl(var(--primary-navy))] mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-[hsl(var(--foreground))] mb-2">
                   Project Description *
                 </label>
                 <textarea
@@ -219,7 +219,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[hsl(var(--orange-accent))] btn-text-white px-6 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                className="w-full bg-[hsl(var(--green-accent))] btn-text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-[hsl(var(--green-accent-hover))] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
               >
                 {isSubmitting ? (
                   <span>Sending...</span>

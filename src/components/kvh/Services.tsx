@@ -35,14 +35,14 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="section-padding bg-[hsl(var(--light-bg))]">
+    <section id="services" className="section-padding bg-[hsl(var(--background))]">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-4 text-[hsl(var(--primary-navy))]">
+        <h2 className="text-4xl font-bold text-center mb-4 text-[hsl(var(--foreground))]">
           OUR SERVICES
         </h2>
-        <div className="w-24 h-1 bg-[hsl(var(--orange-accent))] mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-[hsl(var(--green-accent))] mx-auto mb-12"></div>
 
-        <p className="text-center text-lg text-[hsl(var(--dark-text))] max-w-3xl mx-auto mb-12">
+        <p className="text-center text-lg text-[hsl(var(--muted-text))] max-w-3xl mx-auto mb-12">
           From flooring and drywall to roofing and tiling, we offer comprehensive renovation services
           to meet all your home improvement needs. Quality workmanship, reliable service, every time.
         </p>
@@ -54,16 +54,16 @@ export function Services() {
             return (
               <div
                 key={service.title}
-                className="bg-white rounded-xl p-8 shadow-card hover:shadow-lg transition-shadow border-2 border-[hsl(var(--light-bg))] hover:border-[hsl(var(--orange-accent))]"
+                className="bg-[hsl(var(--card))] rounded-xl p-8 shadow-card hover:shadow-lg transition-shadow border-2 border-[hsl(var(--border))] hover:border-[hsl(var(--green-accent))]"
               >
                 <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="w-16 h-16 bg-[hsl(var(--orange-accent))]/10 rounded-full flex items-center justify-center">
-                    <Icon size={32} className="text-[hsl(var(--orange-accent))]" strokeWidth={2} />
+                  <div className="w-16 h-16 bg-[hsl(var(--green-accent))]/10 rounded-full flex items-center justify-center">
+                    <Icon size={32} className="text-[hsl(var(--green-accent))]" strokeWidth={2} />
                   </div>
-                  <h3 className="text-xl font-bold text-[hsl(var(--primary-navy))]">
+                  <h3 className="text-xl font-bold text-[hsl(var(--foreground))]">
                     {service.title}
                   </h3>
-                  <p className="text-[hsl(var(--dark-text))] leading-relaxed">
+                  <p className="text-[hsl(var(--muted-text))] leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -76,7 +76,7 @@ export function Services() {
         <div className="text-center mt-12">
           <a
             href="#contact"
-            className="inline-block bg-[hsl(var(--orange-accent))] btn-text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg"
+            className="inline-block bg-[hsl(var(--green-accent))] btn-text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[hsl(var(--green-accent-hover))] transition-all shadow-lg"
           >
             Request a Free Quote
           </a>

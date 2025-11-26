@@ -87,9 +87,9 @@ export default function RootLayout({
           <ZyloProvider>
             <ThemeProvider
               attribute="class"
-              defaultTheme="light"
+              defaultTheme="dark"
               enableSystem={false}
-              forcedTheme="light"
+              forcedTheme="dark"
               disableTransitionOnChange
             >
               <TooltipProvider>
